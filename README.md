@@ -17,6 +17,11 @@ cd public
 python -m SimpleHTTPServer
 ```
 
+TODO:
+* document the `?dev=1` query parameter
+* importance of namespaces
+* setting env
+* js interop
 ## Installation
 
 ## Architecture
