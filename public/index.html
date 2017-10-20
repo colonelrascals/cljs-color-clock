@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <title>colorclcok</title>
+  <meta content="" name="description" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="css/client.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="circle">
+    <div class="clock"></div>
+    <div class="box"></div>
+  </div>
+<script>
+(function() {
+  var useDevScript = (document.location.search.indexOf('dev') !== -1);
+  var src = useDevScript ? 'js/dev.js' : 'js/prod.js';
+  var scriptEl = document.createElement('script');
+  scriptEl.type = 'text/javascript';
+  scriptEl.src = src;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(scriptEl, s);
+})();
+</script>
+</body>
+</html>
