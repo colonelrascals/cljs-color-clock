@@ -1,6 +1,6 @@
 (ns io.patrickhildreth.cljs-color-clock.core
   (:require
-    [cljsjs.moment]))
+    [cljsjs.moment]
 
 (defn- now
   "TODO: what does this function do?"
@@ -39,7 +39,7 @@
   "Update the DOM with the current time."
   []
   ;; TODO: write me
-  (js/console.log (str "render now! " (now))))
+  (aset clock-el "textContent" (now)))
 
 
 (defn- mouseover-clock [_js-evt]

@@ -9,6 +9,7 @@
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.293"]
+                 [binaryage/oops "0.5.6"]
                  [cljsjs/moment "2.15.2-3"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]]
